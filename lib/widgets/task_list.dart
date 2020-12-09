@@ -40,15 +40,15 @@ class TaskList extends StatelessWidget {
                           padding:
                               EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                           child: Text(
-                            '${todo.tag.name}',
+                            'activity',
                             style: TextStyle(
-                              color: HexColor('${todo.tag.color}'),
+                              color: HexColor('#27ae60'),
                               fontSize: 12,
                             ),
                           ),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30.0),
-                            color: HexColor('33${todo.tag.color}'),
+                            color: HexColor('33#27ae60'),
                           ),
                         ),
                         Container(
