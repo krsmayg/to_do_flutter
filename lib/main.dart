@@ -14,7 +14,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter App',
       initialRoute: '/',
-      theme: ThemeData(fontFamily: 'Poppins'),
+      theme: ThemeData(
+        fontFamily: 'Poppins',
+      ),
+      // darkTheme: ThemeData(
+      //   brightness: Brightness.dark,
+      //   fontFamily: 'Quicksand',
+      //   textTheme: ThemeData.dark().textTheme.copyWith(
+      //         title: TextStyle(
+      //             fontFamily: 'OpenSans',
+      //             fontSize: 18,
+      //             fontWeight: FontWeight.bold),
+      //       ),
+      //   appBarTheme: AppBarTheme(
+      //     textTheme: ThemeData.dark().textTheme.copyWith(
+      //           title: TextStyle(
+      //               fontFamily: 'OpenSans',
+      //               fontSize: 20,
+      //               fontWeight: FontWeight.bold),
+      //         ),
+      //   ),
+      // ),
+      themeMode: ThemeMode.light,
       onGenerateRoute: RouteGenerator.generateRoute,
     );
   }

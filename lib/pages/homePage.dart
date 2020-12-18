@@ -32,8 +32,14 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 36),
                 ),
               ),
-              TaskController()
+              TaskController(),
             ],
+          ),
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerDocked,
+          floatingActionButton: FloatingActionButton(
+            onPressed: null,
+            child: Icon(Icons.add),
           ),
           bottomNavigationBar: ReusableWidgets(context).getBottomNav()),
     );
